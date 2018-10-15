@@ -10,9 +10,11 @@ public interface IStudentService {
 
     public void updateStudent(Student student);
 
-    public void deleteStudent(int id);
+    public void deleteStudent(Integer id);
 
-    public Student queryStudentById(int id);
+    public Student queryStudentById(Integer id);
 
     public List<Student> queryStudents();
+
+
 }

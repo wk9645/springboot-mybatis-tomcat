@@ -19,16 +19,16 @@ public class StudentServiceImpl implements IStudentService {
 
     @Override
     public void updateStudent(Student student) {
-        studentMapper.updateByPrimaryKey(student);
+        studentMapper.updateByPrimaryKeySelective(student);
     }
 
     @Override
-    public void deleteStudent(int id) {
+    public void deleteStudent(Integer id) {
         studentMapper.deleteByPrimaryKey(id);
     }
 
     @Override
-    public Student queryStudentById(int id) {
+    public Student queryStudentById(Integer id) {
         return studentMapper.selectByPrimaryKey(id);
     }
 

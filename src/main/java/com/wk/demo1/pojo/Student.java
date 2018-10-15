@@ -1,6 +1,11 @@
 package com.wk.demo1.pojo;
 
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table(name = "student")
 public class Student {
+    @Id
     private Integer id;
 
     private String name;
